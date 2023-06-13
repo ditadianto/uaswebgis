@@ -13,7 +13,15 @@ maxZoom: 22,
 attribution: 'Latihan Web GIS' 
 }).addTo(map);
 
-var baseLayers = {'Google Satellite Hybrid': GoogleSatelliteHybrid}; 
+var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png', {
+	maxZoom: 18,
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+
+var baseLayers = {
+    'Google Satellite Hybrid': GoogleSatelliteHybrid,
+    'Open Street Map' : OpenStreetMap_DE
+}; 
 var overlayLayers = {} 
 L.control.layers(baseLayers, overlayLayers, {collapsed: true}).addTo(map);
 
