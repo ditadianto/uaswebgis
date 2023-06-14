@@ -4,6 +4,7 @@
 <script> 
 
 var provin = new L.LayerGroup();
+var hutan = new L.LayerGroup();
 
 var map = L.map('map', { 
  center: [-1.7912604466772375, 116.42311966554416], 
@@ -38,7 +39,8 @@ var baseLayers = {
 
 var groupedOverlays = {
     "Peta Dasar" : {
-        'Provinsi Jawa Barat' : provin
+        'Provinsi Jawa Barat' : provin,
+        'Klasifikasi Hutan' : hutan
     }
 };
 
@@ -108,34 +110,13 @@ div.innerHTML = '<img src="<?=base_url()?>assets/arah-mata-angin.png"style=width
 return div; } 
 north.addTo(map);
 
-
 $.getJSON("<?=base_url()?>/assets/jabar.geojson",function(Kode){
  L.geoJson( Kode, {
  style: function(feature){
  var fillColor,
  Kode = feature.properties.Kode;
- if ( Kode > 21 ) fillColor = "#006837"; 
- else if (Kode>20) fillColor="#fec44f"
- else if (Kode>19) fillColor="#c2e699"
- else if (Kode>18) fillColor="#fee0d2"
- else if (Kode>17) fillColor="#756bb1"
- else if (Kode>16) fillColor="#8c510a"
- else if (Kode>15) fillColor="#01665e"
- else if (Kode>14) fillColor="#e41a1c"
- else if (Kode>13) fillColor="#636363"
- else if (Kode>12) fillColor= "#762a83"
- else if (Kode>11) fillColor="#1b7837"
- else if (Kode>10) fillColor="#d53e4f"
- else if (Kode>9) fillColor="#67001f"
- else if (Kode>8) fillColor="#c994c7"
- else if (Kode>7) fillColor="#fdbb84"
- else if (Kode>6) fillColor="#dd1c77"
- else if (Kode>5) fillColor="#3182bd"
- else if ( Kode > 4 ) fillColor ="#f03b20"
- else if ( Kode > 3 ) fillColor = "#31a354";
- else if ( Kode > 2 ) fillColor = "#78c679";
- else if ( Kode > 1 ) fillColor = "#c2e699";
- else if ( Kode > 0 ) fillColor = "#ffffcc";
+ if ( Kode < 2 ) fillColor = "#ffffff"; 
+ else if ( Kode > 0 ) fillColor = "#ffffff";
  else fillColor = "#f7f7f7"; // no data
  return { color: "#999", weight: 1, fillColor: fillColor, fillOpacity: .6 };
  },
@@ -145,5 +126,24 @@ $.getJSON("<?=base_url()?>/assets/jabar.geojson",function(Kode){
  }).addTo(provin);
  });
 
+ $.getJSON("<?=base_url()?>/assets/hutan.geojson",function(kode){
+ L.geoJson( kode, {
+ style: function(feature){
+ var fillColor,
+ kode = feature.properties.kode;
+ if ( kode > 5 ) fillColor = "#006837"; 
+ else if ( kode > 4 ) fillColor ="#01665e"
+ else if ( kode > 3 ) fillColor = "#00ffff";
+ else if ( kode > 2 ) fillColor = "#ff7f00";
+ else if ( kode > 1 ) fillColor = "#ffff00";
+ else if ( kode > 0 ) fillColor = "#00ff00";
+ else fillColor = "#f7f7f7"; // no data
+ return { color: "#999", weight: 1, fillColor: fillColor, fillOpacity: .6 };
+ },
+ onEachFeature: function( feature, layer ){
+ layer.bindPopup(feature.properties.Name)
+ }
+ }).addTo(hutan);
+ });
 
 </script>
