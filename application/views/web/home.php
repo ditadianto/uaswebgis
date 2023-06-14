@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="<?=base_url()?>assets/web/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,18 +17,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/<?=base_url()?>assets/web/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="<?=base_url()?>assets/web/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="<?=base_url()?>assets/web/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=base_url()?>assets/web/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="<?=base_url()?>assets/web/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
                     <h1 class="m-0"><i class="fa fa-server me-3"></i>GreenHost</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                    <!-- <img src="<?=base_url()?>assets/web/img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -87,7 +87,7 @@
                             <a href="" class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">Get Started Now</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
-                            <img class="img-fluid animated zoomIn" src="img/hero.png" alt="">
+                            <img class="img-fluid animated zoomIn" src="<?=base_url()?>assets/web/img/hero.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -195,7 +195,7 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.png">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="<?=base_url()?>assets/web/img/about.png">
                     </div>
                 </div>
             </div>
@@ -374,7 +374,7 @@
                         </div>
                         <p class="mt-3">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="<?=base_url()?>assets/web/img/testimonial-1.jpg" style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h6 class="fw-bold mb-1">Client Name</h6>
                                 <small>Profession</small>
@@ -387,7 +387,7 @@
                         </div>
                         <p class="mt-3">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="<?=base_url()?>assets/web/img/testimonial-2.jpg" style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h6 class="fw-bold mb-1">Client Name</h6>
                                 <small>Profession</small>
@@ -400,7 +400,7 @@
                         </div>
                         <p class="mt-3">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="<?=base_url()?>assets/web/img/testimonial-3.jpg" style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h6 class="fw-bold mb-1">Client Name</h6>
                                 <small>Profession</small>
@@ -413,7 +413,7 @@
                         </div>
                         <p class="mt-3">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="<?=base_url()?>assets/web/img/testimonial-4.jpg" style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h6 class="fw-bold mb-1">Client Name</h6>
                                 <small>Profession</small>
@@ -438,7 +438,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
                             <div class="text-center p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/team-1.jpg" alt="">
+                                <img class="img-fluid rounded-circle mb-4" src="<?=base_url()?>assets/web/img/team-1.jpg" alt="">
                                 <h5 class="fw-bold mb-1">Full Name</h5>
                                 <small>Designation</small>
                             </div>
@@ -452,7 +452,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
                             <div class="text-center p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/team-2.jpg" alt="">
+                                <img class="img-fluid rounded-circle mb-4" src="<?=base_url()?>assets/web/img/team-2.jpg" alt="">
                                 <h5 class="fw-bold mb-1">Full Name</h5>
                                 <small>Designation</small>
                             </div>
@@ -466,7 +466,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
                             <div class="text-center p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/team-3.jpg" alt="">
+                                <img class="img-fluid rounded-circle mb-4" src="<?=base_url()?>assets/web/img/team-3.jpg" alt="">
                                 <h5 class="fw-bold mb-1">Full Name</h5>
                                 <small>Designation</small>
                             </div>
@@ -480,7 +480,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
                             <div class="text-center p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/team-4.jpg" alt="">
+                                <img class="img-fluid rounded-circle mb-4" src="<?=base_url()?>assets/web/img/team-4.jpg" alt="">
                                 <h5 class="fw-bold mb-1">Full Name</h5>
                                 <small>Designation</small>
                             </div>
@@ -580,15 +580,15 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/<?=base_url()?>assets/web/js/bootstrap.bundle.min.js"></script>
+    <script src="<?=base_url()?>assets/web/lib/wow/wow.min.js"></script>
+    <script src="<?=base_url()?>assets/web/lib/easing/easing.min.js"></script>
+    <script src="<?=base_url()?>assets/web/lib/waypoints/waypoints.min.js"></script>
+    <script src="<?=base_url()?>assets/web/lib/counterup/counterup.min.js"></script>
+    <script src="<?=base_url()?>assets/web/lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="<?=base_url()?>assets/web/js/main.js"></script>
 </body>
 
 </html>
