@@ -146,4 +146,31 @@ $.getJSON("<?=base_url()?>/assets/jabar.geojson",function(Kode){
  }).addTo(hutan);
  });
 
+ const legend = L.control.Legend({
+position: "bottomright",
+title: "Keterangan",
+collapsed: true,
+symbolWidth: 24,
+opacity: 1,
+column: 1,
+legends: [{
+label: "Kabupaten/Kota",
+font: 29,
+type: "polygon",
+sides: 4,
+color: "#ffffff",
+fillColor: "#ffffff",
+weight: 2
+},{
+label: "Jenis Hutan",
+font: 29,
+type: "polygon",
+sides: 4,
+color: "#ff7f00",
+fillColor: "#ff7f00",
+weight: 2  
+}]
+})
+.addTo(map);
+
 </script>

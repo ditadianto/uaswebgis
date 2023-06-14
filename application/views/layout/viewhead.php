@@ -48,4 +48,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
  <script type="text/javascript" src="<?=base_url()?>assets/Leaflet.Coordinates-0.1.5.min.js"></script> 
 <link rel="stylesheet" href="<?=base_url()?>assets/Leaflet.Coordinates-0.1.5.css"/>
 
+<script type="text/javascript"
+src="<?=base_url()?>assets/leaflet.legend.js"></script>
+<link rel="stylesheet" href="<?=base_url()?>assets/leaflet.legend.css"/>
+
 </head>
